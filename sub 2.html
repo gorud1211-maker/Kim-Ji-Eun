@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>202478072_김지은</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 초기화 -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Roboto, "Helvetia Neue",Arial,sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        img {
+            border: 0;
+        }
+        li {
+            list-style: none;
+        }
+
+    </style>
+    <!-- 공통 -->
+    <style>
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left:10px;
+            padding-right: 10px;
+        }
+    </style>
+    </style>
+    <!-- 헤더 --> 
+    <style>
+        #main-header {
+            padding: 10px 5px;
+        }
+        #main-header h1{
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 27px;
+            color:rgb(30, 115, 45);
+        }
+        #main-header ul{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #main-header li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #main-header li a{
+            color:#555;
+        }
+        #main-header li.active a{
+            color:rgb(30, 115, 45);
+            font-weight: 500;
+        }
+        #main-header label{
+            text-align: center;
+            float: right;
+            width: 40px;
+            height: 27px;
+            line-height: 27px;
+            color: #222;
+            border: 1px solid #222;
+            border-radius: 5px;
+        }
+        #checkbox {
+            display:none;
+        }
+        #checkbox + nav {
+            display:black;
+        }
+        #checkbox:checked + nav {
+            display: none;
+        }
+    </style>
+    <!-- 본문과 푸터 -->
+    <style>
+        #main-content {
+            background: #e66363;
+            padding: 40px 15px 30px;
+        }
+        #main-content h1 {
+            text-align: center;
+            margin-bottom: 40px 15px 30px;
+            color: rgb(255, 255, 255);
+        }
+        #main-content p{
+            color: #222222;
+            text-align: center;
+            color: white;
+        }
+        #main-footer {
+        background: #e66363;
+        padding: 40px 15px 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+        }
+                html, body {
+       height: 100%;
+       }
+
+       body {
+       display: flex;
+       flex-direction: column;
+       }
+
+      #sub-content {
+      flex: 1;
+      }
+      
+      #sub-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+
+      /* Favorites 카드 2x2 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* 카드 공통 */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* 이미지 */
+.card img {
+  width: 140px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* 오디오 */
+.card audio {
+  width: 100%;
+  margin-top: 12px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1>Menu</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Intro<a></li>
+                    <li><a href="sub 1.html">Personality</a></li>
+                    <li class="active"><a href="sub 2.html">Favorites</a></li>
+                    <li><a href="sub 3.html">Daily Life</a></li>
+                    <li><a href="sub 4.html">Future</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main-content">
+        <article class="container">
+            <h1>Favorites</h1>
+    </div>
+    <div id="sub-content">
+  <article class="container">
+
+    <div class="card-grid">
+
+      <!-- 카드 1 -->
+      <div class="card">
+        <img src="다운로드7.jpg" alt="마라탕">
+        <h4>마라탕</h4>
+      </div>
+
+      <!-- 카드 2 -->
+      <div class="card">
+        <img src="다운로드8.jpg" alt="요리">
+        <h4>요리</h4>
+      </div>
+
+      <!-- 카드 3 -->
+      <div class="card">
+        <img src="다운로드9.jpg" alt="불닭볶음면">
+        <h4>불닭볶음면</h4>
+      </div>
+
+      <!-- 카드 4 (오디오 포함) -->
+      <div class="card">
+        <img src="다운로드10.jpg" alt="요즘 듣는 노래">
+        <h4>요즘 듣는 노래</h4>
+        <audio src="다운로드11.mp3" controls></audio>
+      </div>
+
+    </div>
+
+  </article>
+</div>
+    <div id="main-footer">
+        <footer class="container">
+            <div>©2025 Kim Jieun. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>
