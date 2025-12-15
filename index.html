@@ -101,7 +101,8 @@
         color: #fff;
         font-size: 13px;
         }
-                html, body {
+
+        html, body {
        height: 100%;
        }
 
@@ -121,48 +122,56 @@
       align-items: center;
       text-align: center;
       }
+      /* ===== Intro 카드 박스 ===== */
+     #sub-content {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     }
 
-/* 4개 카드 그리드 */
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 40px;
-}
-
-/* 카드 공통 */
-.card {
+    .intro-card {
     background: #ffffff;
-    border-radius: 20px;
-    padding: 30px 20px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+  
+   /* 이미지 */
+   .intro-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+   } 
 
-    /* ⭐ 카드 안 중앙 정렬 핵심 */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-/* 이미지 */
-.card img {
-    width: 120px;
-    margin-bottom: 15px;
-    border-radius: 12px;
-}
-
-/* 제목 */
-.card h3 {
+  /* 텍스트 */
+  .intro-card h2 {
     margin-bottom: 8px;
-    color: #333;
-}
+    }
 
-/* 설명 */
-.card h4 {
+    .intro-card h3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+    }
+
+    .intro-card h4 {
+    font-size: 14px;
     font-weight: normal;
-    color: #555;
-    line-height: 1.4;
-}
+    color: #333;
+     }
+
+/* 마우스 효과 */
+    .intro-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    }
+
+      
     </style>
 </head>
 <body>
@@ -175,8 +184,8 @@
             <input id="checkbox" checked="checked" type="checkbox">
             <nav>
                 <ul>
-                    <li><a href="index.html">Intro</a></li>
-                    <li class="active"><a href="sub 1.html">Personality</a></li>
+                    <li class="active"><a href="index.html">Intro</a></li>
+                    <li><a href="sub 1.html">Personality</a></li>
                     <li><a href="sub 2.html">Favorites</a></li>
                     <li><a href="sub 3.html">Daily Life</a></li>
                     <li><a href="sub 4.html">Future</a></li>
@@ -186,41 +195,22 @@
     </div>
     <div id="main-content">
         <article class="container">
-            <h1>Personality</h1>
+            <h1>Intro</h1>
+        </article>
     </div>
     <div id="sub-content">
-    <article class="container">
-
-        <div class="card-grid">
-
-            <div class="card">
-                <img src="infp.jpg">
-                <h3>MBTI</h3>
-                <h4>INFP</h4>
-            </div>
-
-            <div class="card">
-                <img src="다운로드3.jpg">
-                <h3>키워드</h3>
-                <h4>#밝음 #마라탕 #불닭볶음면</h4>
-            </div>
-
-            <div class="card">
-                <img src="다운로드.jpg">
-                <h3>장점</h3>
-                <h4>밝고 관심 가진 일은 끝까지 해낸다.</h4>
-            </div>
-
-            <div class="card">
-                <img src="다운로드2.jpg">
-                <h3>단점</h3>
-                <h4>일어나지 않을 일까지 걱정을 많이 한다.</h4>
-            </div>
-
-        </div>
-
-    </article>
-</div>
+        <article class="container intro-card">
+            <br>
+            <img src="kitty.jpg">
+            <h2>김지은</h2>
+            <br>
+            <h3>202478072<h3>
+        
+            <br>
+            <h4>이 페이지는 저를 소개하는 공간입니다.</h4>
+            <br>
+        </article>
+    </div>
     <div id="main-footer">
         <footer class="container">
             <div>©2025 Kim Jieun. All rights reserved.</div>
