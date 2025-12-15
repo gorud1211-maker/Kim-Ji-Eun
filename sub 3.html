@@ -90,7 +90,7 @@
             text-align: center;
             color: white;
         }
-         #main-footer {
+        #main-footer {
         background: #e66363;
         padding: 40px 15px 30px;
         text-align: center;
@@ -99,263 +99,168 @@
         }
 
         html, body {
-       height: 100%;
-       }
+        height: 100%;
+        }
 
-       body {
-       display: flex;
-       flex-direction: column;
-       }
+        body {
+        display: flex;
+        flex-direction: column;
+        }
 
-      #sub-content {
-      flex: 1;
-      }
-      
-      #sub-content {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      }
-      /* Daily Life Timeline UI */
+        #sub-content {
+        flex: 1;
+        }
+        
+        #sub-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+        /* Daily Life Timeline UI */
 #sub-content{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 28px 12px 60px;
-  background: #fff6f6;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 28px 12px 60px;
+    background: #fff6f6;
 }
 
 #sub-content .container{
-  width: min(720px, 100%);
+    width: min(720px, 100%);
 }
 
 /* 음악 플레이어 카드 */
 .player-card{
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,.06);
-  border-radius: 16px;
-  padding: 16px 16px 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,.06);
-  margin-bottom: 18px;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 16px;
+    padding: 16px 16px 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
+    margin-bottom: 18px;
 }
 .player-card h2{
-  font-size: 14px;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 10px;
-  letter-spacing: .2px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    letter-spacing: .2px;
 }
 .player-card audio{
-  width: 100%;
+    width: 100%;
 }
 
 /* 타임라인 */
 .timeline{
-  position: relative;
-  padding-left: 28px; /* 왼쪽 라인 공간 */
+    position: relative;
+    padding-left: 28px; /* 왼쪽 라인 공간 */
 }
 .timeline::before{
-  content:"";
-  position: absolute;
-  left: 12px;
-  top: 6px;
-  bottom: 6px;
-  width: 2px;
-  background: rgba(230,99,99,.35);
-  border-radius: 2px;
+    content:"";
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: rgba(230,99,99,.35);
+    border-radius: 2px;
 }
 
 .tl-item{
-  position: relative;
-  margin-bottom: 14px;
+    position: relative;
+    margin-bottom: 14px;
 }
 .tl-dot{
-  position: absolute;
-  left: 5px;
-  top: 16px;
-  width: 14px;
-  height: 14px;
-  background: #e66363;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(230,99,99,.18);
+    position: absolute;
+    left: 5px;
+    top: 16px;
+    width: 14px;
+    height: 14px;
+    background: #e66363;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(230,99,99,.18);
 }
 
 .tl-card{
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,.06);
-  border-radius: 16px;
-  padding: 14px 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,.06);
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 16px;
+    padding: 14px 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
 }
 
 .tl-title{
-  font-size: 18px;
-  font-weight: 800;
-  margin-bottom: 10px;
-  color: #222;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #222;
 }
 
 /* 체크리스트처럼 보이게 */
 .tl-list{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 8px;
 }
 .tl-list li{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #333;
-  font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-size: 15px;
 }
 
-/* Daily Life Timeline UI */
-#sub-content{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 28px 12px 60px;
-  background: #fff6f6;
-}
-
-#sub-content .container{
-  width: min(720px, 100%);
-}
-
-/* 음악 플레이어 카드 */
-.player-card{
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,.06);
-  border-radius: 16px;
-  padding: 16px 16px 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,.06);
-  margin-bottom: 18px;
-}
-.player-card h2{
-  font-size: 14px;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 10px;
-  letter-spacing: .2px;
-}
-.player-card audio{
-  width: 100%;
-}
-
-/* 타임라인 */
-.timeline{
-  position: relative;
-  padding-left: 28px; /* 왼쪽 라인 공간 */
-}
-.timeline::before{
-  content:"";
-  position: absolute;
-  left: 12px;
-  top: 6px;
-  bottom: 6px;
-  width: 2px;
-  background: rgba(230,99,99,.35);
-  border-radius: 2px;
-}
-
-.tl-item{
-  position: relative;
-  margin-bottom: 14px;
-}
-.tl-dot{
-  position: absolute;
-  left: 5px;
-  top: 16px;
-  width: 14px;
-  height: 14px;
-  background: #e66363;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(230,99,99,.18);
-}
-
-.tl-card{
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,.06);
-  border-radius: 16px;
-  padding: 14px 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,.06);
-}
-
-.tl-title{
-  font-size: 18px;
-  font-weight: 800;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-/* 체크리스트처럼 보이게 */
-.tl-list{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 8px;
-}
-.tl-list li{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #333;
-  font-size: 15px;
-}
 /* 체크박스 리스트 */
 .tl-list li{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 15px;
-  color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #333;
 }
 
 .tl-list input[type="checkbox"]{
-  display: none;
+    display: none;
 }
 
 /* 커스텀 체크박스 */
 .tl-list label{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 
 .tl-list label::before{
-  content: "";
-  width: 22px;
-  height: 22px;
-  border-radius: 7px;
-  border: 2px solid rgb(30,115,45);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  color: white;
-  background: white;
-  transition: all .2s ease;
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 7px;
+    border: 2px solid rgb(30,115,45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: white;
+    background: white;
+    transition: all .2s ease;
 }
 
 /* 체크했을 때 */
 .tl-list input[type="checkbox"]:checked + label::before{
-  content: "✓";
-  background: rgb(30,115,45);
-  color: #fff;
+    content: "✓";
+    background: rgb(30,115,45);
+    color: #fff;
 }
 
 /* 체크했을 때 글자 스타일 */
 .tl-list input[type="checkbox"]:checked + label{
-  color: rgb(30,115,45);
-  text-decoration: line-through;
+    color: rgb(30,115,45);
+    text-decoration: line-through;
 }
     </style>
 </head>
@@ -384,86 +289,85 @@
         </article>
     </div>
     <div id="sub-content">
-  <article class="container">
+    <article class="container">
 
-         <div class="player-card">
-        <h2>[ 음악 플레이어 ]</h2>
-        <audio controls>
-  <source src="/Kim-Ji-Eun/download12.mp3" type="audio/mpeg">
-  브라우저가 오디오를 지원하지 않습니다.
-</audio>
-      </div>
+            <div class="player-card">
+                <h2>[ 음악 플레이어 ]</h2>
+                <audio controls>
+                    <source src="/Kim-Ji-Eun/download11.mp3" type="audio/mpeg">
+                    브라우저가 오디오를 지원하지 않습니다.
+                </audio>
+            </div>
 
-      <div class="timeline">
+            <div class="timeline">
 
-        <section class="tl-item">
-          <span class="tl-dot"></span>
-          <div class="tl-card">
-            <div class="tl-title">Morning</div>
-            <ul class="tl-list">
-              <li>
-                <input type="checkbox" id="m1" data-save="m1">
-                <label for="m1">침구 정리</label>
-              </li>
-              <li>
-                <input type="checkbox" id="m2" data-save="m2">
-                <label for="m2">방 돌돌이</label>
-              </li>
-              <li>
-                <input type="checkbox" id="m3" data-save="m3">
-                <label for="m3">책상 정리</label>
-              </li>
-            </ul>
-          </div>
-        </section>
+                <section class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-card">
+                        <div class="tl-title">Morning</div>
+                        <ul class="tl-list">
+                            <li>
+                                <input type="checkbox" id="m1" data-save="m1">
+                                <label for="m1">침구 정리</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="m2" data-save="m2">
+                                <label for="m2">방 돌돌이</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="m3" data-save="m3">
+                                <label for="m3">책상 정리</label>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-        <section class="tl-item">
-          <span class="tl-dot"></span>
-          <div class="tl-card">
-            <div class="tl-title">Afternoon</div>
-            <ul class="tl-list">
-              <li>
-                <input type="checkbox" id="a1" data-save="a1">
-                <label for="a1">공부</label>
-              </li>
-              <li>
-                <input type="checkbox" id="a2" data-save="a2">
-                <label for="a2">운동</label>
-              </li>
-              <li>
-                <input type="checkbox" id="a3" data-save="a3">
-                <label for="a3">기타</label>
-              </li>
-            </ul>
-          </div>
-        </section>
+                <section class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-card">
+                        <div class="tl-title">Afternoon</div>
+                        <ul class="tl-list">
+                            <li>
+                                <input type="checkbox" id="a1" data-save="a1">
+                                <label for="a1">공부</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="a2" data-save="a2">
+                                <label for="a2">운동</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="a3" data-save="a3">
+                                <label for="a3">기타</label>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-        <section class="tl-item">
-          <span class="tl-dot"></span>
-          <div class="tl-card">
-            <div class="tl-title">Night</div>
-            <ul class="tl-list">
-              <li>
-                <input type="checkbox" id="n1" data-save="n1">
-                <label for="n1">씻기</label>
-              </li>
-              <li>
-                <input type="checkbox" id="n2" data-save="n2">
-                <label for="n2">잘 준비</label>
-              </li>
-            </ul>
-          </div>
-        </section>
+                <section class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-card">
+                        <div class="tl-title">Night</div>
+                        <ul class="tl-list">
+                            <li>
+                                <input type="checkbox" id="n1" data-save="n1">
+                                <label for="n1">씻기</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="n2" data-save="n2">
+                                <label for="n2">잘 준비</label>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-      </div>
+            </div>
     </article>
-  </div>
+    </div>
 
-  <div id="main-footer">
-    <footer class="container">
-      <div>©2025 Kim Jieun. All rights reserved.</div>
-    </footer>
-  </div>
+    <div id="main-footer">
+        <footer class="container">
+            <div>©2025 Kim Jieun. All rights reserved.</div>
+        </footer>
+    </div>
 </body>
 </html>
-
