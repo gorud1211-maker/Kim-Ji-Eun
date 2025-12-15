@@ -36,10 +36,7 @@
     #main-header ul{ margin-top: 20px; margin-bottom: 10px; }
     #main-header li{ margin-top: 10px; margin-bottom: 10px; }
     #main-header li a{ color:#555; }
-    #main-header li.active a{
-      color: rgb(30, 115, 45);
-      font-weight: 600;
-    }
+    #main-header li.active a{ color:rgb(30, 115, 45); font-weight: 500; }
     #main-header label{
       text-align: center;
       float: right;
@@ -50,9 +47,8 @@
       border: 1px solid #222;
       border-radius: 5px;
     }
-
     #checkbox { display:none; }
-    #checkbox + nav { display: block; }
+    #checkbox + nav { display:block; }
     #checkbox:checked + nav { display: none; }
   </style>
 
@@ -63,15 +59,13 @@
     }
     #main-content h1 {
       text-align: center;
-      margin-bottom: 0;
-      color: #fff;
-      letter-spacing: 0.04em;
-      font-weight: 800;
+      margin-bottom: 40px 15px 30px;
+      color: rgb(255, 255, 255);
     }
 
     #main-footer {
       background: #e66363;
-      padding: 30px 15px;
+      padding: 40px 15px 30px;
       text-align: center;
       color: #fff;
       font-size: 13px;
@@ -80,55 +74,62 @@
     html, body { height: 100%; }
     body { display: flex; flex-direction: column; }
     #sub-content { flex: 1; }
-
-    /* ===== Future 디자인 핵심 ===== */
-    #sub-content{
+    
+    /* Future 페이지 스타일 */
+    #sub-content {
+      flex: 1;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      padding: 50px 0;
-      text-align: left; /* 가운데 정렬 말고, 내용은 좌측 정렬이 더 예쁨 */
+      align-items: flex-start; /* 상단 정렬 */
+      padding: 30px 15px 60px;
+      background: #fff6f6;
     }
-
-    .future-wrap{
-      width: min(640px, 92%);
-      margin: 0 auto;
+    .future-wrap {
+      width: min(520px, 100%);
+      text-align: center;
     }
-
-    .future-image{
-      margin: 0 auto 28px;
+    .future-wrap h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 25px;
     }
-    .future-image img{
+    
+    /* 이미지 스타일 */
+    .future-image img {
       width: 100%;
-      height: 230px;
-      object-fit: cover;
-      border-radius: 14px;
+      max-width: 400px; /* 최대 너비 제한 */
+      height: auto;
+      border-radius: 12px;
+      margin: 0 auto 30px;
+      box-shadow: 0 8px 15px rgba(0,0,0,.1);
     }
 
-    .future-section{
-      padding: 22px 0;
-      border-top: 1px solid #ddd; /* ──────────── */
+    /* 섹션 스타일 */
+    .future-section {
+      text-align: left;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,.08);
+      margin-bottom: 20px;
     }
-    .future-section h3{
+    .future-section h3 {
       font-size: 18px;
-      margin-bottom: 12px;
-      color: #222;
       font-weight: 700;
+      color: rgb(30, 115, 45);
+      margin-bottom: 12px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
     }
-
-    .future-section ul{
-      padding-left: 18px;
-    }
-    .future-section li{
-      list-style: disc;      /* • */
-      margin: 8px 0;
-      font-size: 14px;
+    .future-section ul {
+      list-style-type: '• ';
+      padding-left: 20px;
+      font-size: 15px;
       color: #555;
-      line-height: 1.6;
+      line-height: 1.8;
     }
   </style>
 </head>
-
 <body>
   <div id="main-header">
     <header class="container">
@@ -159,6 +160,7 @@
 
   <div id="sub-content">
     <article class="future-wrap">
+      
       <div class="future-image">
         <img src="/Kim-Ji-Eun/download13.jpg" alt="Future image">
       </div>
@@ -174,11 +176,11 @@
       <section class="future-section">
         <h3>Long-term</h3>
         <ul>
-          <li>포트폴리오 준비하기</li>
-          <li>여러 대외활동 참가하기</li>
-          <li>멋진 개발자 되기!</li>
+          <li>취업 후 집 장만</li>
+          <li>가족들과 해외여행</li>
         </ul>
       </section>
+      
     </article>
   </div>
 
