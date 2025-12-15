@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>202478072_김지은</title>
@@ -72,7 +72,7 @@
             display:none;
         }
         #checkbox + nav {
-            display:black;
+            display:block;
         }
         #checkbox:checked + nav {
             display: none;
@@ -168,7 +168,7 @@
             <input id="checkbox" checked="checked" type="checkbox">
             <nav>
                 <ul>
-                    <li><a href="index.html">Intro<a></li>
+                    <li><a href="index.html">Intro</a></li>
                     <li><a href="sub 1.html">Personality</a></li>
                     <li class="active"><a href="sub 2.html">Favorites</a></li>
                     <li><a href="sub 3.html">Daily Life</a></li>
@@ -208,7 +208,10 @@
       <div class="card">
         <img src="다운로드10.jpg" alt="요즘 듣는 노래">
         <h4>요즘 듣는 노래</h4>
-        <audio src="다운로드11.mp3" controls></audio>
+        <audio controls>
+  <source src="다운로드11.mp3" type="audio/mpeg">
+  브라우저가 오디오를 지원하지 않습니다.
+</audio>
       </div>
 
     </div>
